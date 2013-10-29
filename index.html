@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<title>Thinking Creatively - Learn to think outside the box.</title>
+
+	<link href='Style.css' rel='stylesheet' type='text/css'>
+
+	<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+
+	<link href='http://fonts.googleapis.com/css?family=Dorsa' rel='stylesheet' type='text/css'>
+
+	<link href='http://fonts.googleapis.com/css?family=Raleway+Dots' rel='stylesheet' type='text/css'>
+
+	<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
+
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,400' rel='stylesheet' type='text/css'>
+
+	<script>
+		$("man").click(function(){
+  			$("#box").animate({height:"300px"});
+		});
+	</script>
+
+	<script>
+		$(document).ready(function(){
+  		 $(".box").click(function(){
+  		  $(".man").animate({marginLeft:"30px"}, "slow");
+  		   $(".thebox").toggleClass("show-description");
+  		});
+		});
+	</script>
+
+</head>
+
+<body>
+
+<div class="headerbar">
+  <h1>Thinking Creatively.</h1>
+  <h2>Learn to think outside the box.</h2>
+</div>
+
+<div class="box">
+	<div class="thebox">
+		<h3>The box.</h3>
+	</div>
+	<div class="boxgap">
+		<img src="./Images/Box_Uniform_Gap.png">
+	</div>
+	<div class="man">
+		<img src="./Images/Man.png">
+	</div>
+</div>
+
+<div class="emailform">
+ 	 <form action="process.php" method="post"> 
+  		<input type="email" placeholder="Your email">
+  		<input type="submit" value="Submit">
+ 	</form> 
+</div>
+
+</body>

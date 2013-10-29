@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  background: white;
+}
+
+h1 {
+  font-family: 'Raleway Dots', cursive;
+  text-align: center;
+  font-size: 60px;
+  color: white;
+  margin: 25px 0 0 0px;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  font-family: 'Raleway Dots', cursive;
+  font-size: 30px;
+  margin: 10px 0px 0px 0px;
+}
+
+h3 {
+  color: #232323;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px; 
+  display: inline; 
+}
+
+td {
+  text-align: center;
+}
+
+.headerbar {
+  height: 170px;
+  background: #232323;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  margin: 0 auto;
+}
+
+.box {
+  position: relative;
+  margin: 200px 0 0 0;
+  text-align: center;
+}
+
+.boxgap {
+  position: relative;
+  margin: 0 0 0 0;
+  text-align: center;
+  display: inline;
+}
+
+.man {
+  position: relative;
+  margin: 0 0 0 -49px;
+  text-align: center;
+  display: inline;
+}
+
+.emailform {
+  text-align: center;
+  display: inline;
+}
+
+.namefield {
+  text-align: right;
+}
+
+input {
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #232323;
+}
+
+input[type="submit"] {
+  background: #232323;
+  color: white;
+  cursor: pointer;
+}
+
+
+
