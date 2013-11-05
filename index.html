@@ -19,18 +19,17 @@
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,400' rel='stylesheet' type='text/css'>
 
 	<script>
-		$("man").click(function(){
-  			$("#box").animate({height:"300px"});
-		});
-	</script>
-
-	<script>
-		$(document).ready(function(){
-  		 $(".box").click(function(){
-  		  $(".man").animate({marginLeft:"30px"}, "slow");
-  		   $(".thebox").animate({marginRight:"30px"}, "slow");
+		 $(document).ready(function(){
+  		 	setTimeout(function () { $(".arrow").fadeTo(0, 1)}, 2000);
+  		 		setTimeout(function () { $(".meetdave").fadeTo(0, 1)}, 2000);
+  		 			setTimeout(function () { $(".arrow2").fadeTo(0, 1)}, 3000);
+  		 			setTimeout(function () { $(".everyone").fadeTo(0, 1)}, 3000);
+						setTimeout(function () { $(".man").animate({marginLeft:"150px"}, "slow")
+													$(".arrow2").fadeTo(0, 0)
+														$(".everyone").fadeTo(0, 0)
+															$(".thebox").animate({marginRight:"190px"}, "slow");}, 5000);
+  		   				
   		});
-		});
 	</script>
 
 </head>
@@ -43,6 +42,10 @@
 </div>
 
 <div class="box">
+	<div class="everyone">
+		<p>Everyone</p>
+		<p>else</p>
+	</div>
 	<div class="thebox">
 		<h3>The box.</h3>
 	</div>
@@ -52,11 +55,21 @@
 	<div class="man">
 		<img src="./Images/Man.png">
 	</div>
+	<div class="meetdave">
+		<p>Meet</p>
+		<p>Sam</p>
+	</div>
+	<div class="arrow">
+		<img src="./Images/Arrow.png">
+	</div>
+	<div class="arrow2">
+		<img src="./Images/Arrow2.png">
+	</div>
 </div>
 
 <div class="emailform">
  	 <form action="process.php" method="post"> 
-  		<input type="email" placeholder="Your email">
+  		<input name="email" type="email" placeholder="Your email">
   		<input type="submit" value="Submit">
  	</form> 
 </div>
